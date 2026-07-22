@@ -349,8 +349,10 @@
     </div>
 
     <!-- 音乐文件 - 开启自动播放+循环 -->
-    <audio id="musicPlayer" loop autoplay>
+    <audio id="musicPlayer" loop autoplay muted>
         <source src="./music/myjealousy.mp3" type="audio/mpeg">
+    
+    <button onclick="document.getElementById('musicPlayer').muted = false">点击开启音乐</button>
     
 
     <script>
